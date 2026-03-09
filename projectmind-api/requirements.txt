@@ -1,0 +1,40 @@
+# ProjectMind AI - Backend MVP
+# Python 3.11+
+
+# API
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic[email]>=2.5.0
+pydantic-settings>=2.1.0
+
+# Supabase
+supabase>=2.3.0
+
+# Auth
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# CrewAI & LLM (google-genai para Gemini nativo; LiteLLM para OpenRouter/outros)
+crewai[google-genai]>=0.41.0
+crewai-tools>=0.12.0
+anthropic>=0.18.0
+litellm>=1.30.0
+
+# Async & Queue (MVP: optional Celery)
+redis>=5.0.0
+celery>=5.3.0
+
+# Embeddings (1536 dims - OpenAI compatible para pgvector)
+openai>=1.12.0
+
+# HTTP & SSE
+httpx>=0.26.0
+sse-starlette>=1.8.0
+
+# Utils
+python-dotenv>=1.0.0
+structlog>=24.1.0
+
+# Test
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
